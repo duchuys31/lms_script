@@ -7,8 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import re
 
-username = "B20DCCN325XLAN4FA23"
-password = "Aa167218@"
+username = ""
+password = "@"
 
 with open('chuong_8.json', 'r') as file:
     data = json.load(file)
