@@ -238,7 +238,7 @@
         "kind": 5,
         "importPath": "auto",
         "description": "auto",
-        "peekOfCode": "username = \"B20DCCN325XLAN4FA23\"\npassword = \"Aa167218@\"\nwith open('chuong_9.json', 'r') as file:\n    data = json.load(file)\ndriver = webdriver.Edge()\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3678\")\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3092\")\ndriver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3129\")\nusername_input = driver.find_element(By.NAME,\"username\")\nusername_input.send_keys(username)",
+        "peekOfCode": "username = \"\"\npassword = \"\"\nwith open('chuong_9.json', 'r') as file:\n    data = json.load(file)\ndriver = webdriver.Edge()\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3678\")\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3092\")\ndriver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3002\")\nusername_input = driver.find_element(By.NAME,\"username\")\nusername_input.send_keys(username)",
         "detail": "auto",
         "documentation": {}
     },
@@ -247,7 +247,7 @@
         "kind": 5,
         "importPath": "auto",
         "description": "auto",
-        "peekOfCode": "password = \"Aa167218@\"\nwith open('chuong_9.json', 'r') as file:\n    data = json.load(file)\ndriver = webdriver.Edge()\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3678\")\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3092\")\ndriver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3129\")\nusername_input = driver.find_element(By.NAME,\"username\")\nusername_input.send_keys(username)\npassword_input = driver.find_element(By.NAME,\"password\")",
+        "peekOfCode": "password = \"\"\nwith open('chuong_9.json', 'r') as file:\n    data = json.load(file)\ndriver = webdriver.Edge()\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3678\")\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3092\")\ndriver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3002\")\nusername_input = driver.find_element(By.NAME,\"username\")\nusername_input.send_keys(username)\npassword_input = driver.find_element(By.NAME,\"password\")",
         "detail": "auto",
         "documentation": {}
     },
@@ -256,7 +256,7 @@
         "kind": 5,
         "importPath": "auto",
         "description": "auto",
-        "peekOfCode": "driver = webdriver.Edge()\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3678\")\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3092\")\ndriver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3129\")\nusername_input = driver.find_element(By.NAME,\"username\")\nusername_input.send_keys(username)\npassword_input = driver.find_element(By.NAME,\"password\")\npassword_input.send_keys(password)\nlogin_button = driver.find_element(By.ID, \"loginbtn\")\nlogin_button.click()",
+        "peekOfCode": "driver = webdriver.Edge()\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3678\")\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3092\")\ndriver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3002\")\nusername_input = driver.find_element(By.NAME,\"username\")\nusername_input.send_keys(username)\npassword_input = driver.find_element(By.NAME,\"password\")\npassword_input.send_keys(password)\nlogin_button = driver.find_element(By.ID, \"loginbtn\")\nlogin_button.click()",
         "detail": "auto",
         "documentation": {}
     },
