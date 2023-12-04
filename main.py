@@ -4,7 +4,7 @@ import json
 question = {}
 key, value = [], []
 
-file_path = 'Kiểm tra kiến thức Chương 8 Attempt review.html'
+file_path = 'Quiz_ kiểm tra kiến thức Chương 9 - Nén ảnh_ Attempt review.html'
 
 with open(file_path, 'r', encoding='utf-8') as file:
     html_content = file.read()
@@ -33,6 +33,6 @@ for text in checked_texts:
 for i in range(len(key)):
     question[key[i]] = value[i]
     
-with open('chuong_8.json', 'w') as json_file:
+with open('chuong_9.json', 'w') as json_file:
     json.dump(question, json_file)
 

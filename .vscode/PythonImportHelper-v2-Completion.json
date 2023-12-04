@@ -1,0 +1,353 @@
+[
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "pformat",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "jmespath",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jmespath",
+        "description": "jmespath",
+        "detail": "jmespath",
+        "documentation": {}
+    },
+    {
+        "label": "exceptions",
+        "importPath": "jmespath",
+        "description": "jmespath",
+        "isExtraImport": true,
+        "detail": "jmespath",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "unidecode",
+        "importPath": "unidecode",
+        "description": "unidecode",
+        "isExtraImport": true,
+        "detail": "unidecode",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.11/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.11/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.11/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.11/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.11/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.11/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "venv.bin.jp",
+        "description": "venv.bin.jp",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser()\n    parser.add_argument('expression')\n    parser.add_argument('-f', '--filename',\n                        help=('The filename containing the input data.  '\n                              'If a filename is not given then data is '\n                              'read from stdin.'))\n    parser.add_argument('--ast', action='store_true',\n                        help=('Pretty print the AST, do not search the data.'))\n    args = parser.parse_args()",
+        "detail": "venv.bin.jp",
+        "documentation": {}
+    },
+    {
+        "label": "username",
+        "kind": 5,
+        "importPath": "auto",
+        "description": "auto",
+        "peekOfCode": "username = \"B20DCCN325XLAN4FA23\"\npassword = \"Aa167218@\"\nwith open('chuong_9.json', 'r') as file:\n    data = json.load(file)\ndriver = webdriver.Edge()\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3678\")\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3092\")\ndriver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3129\")\nusername_input = driver.find_element(By.NAME,\"username\")\nusername_input.send_keys(username)",
+        "detail": "auto",
+        "documentation": {}
+    },
+    {
+        "label": "password",
+        "kind": 5,
+        "importPath": "auto",
+        "description": "auto",
+        "peekOfCode": "password = \"Aa167218@\"\nwith open('chuong_9.json', 'r') as file:\n    data = json.load(file)\ndriver = webdriver.Edge()\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3678\")\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3092\")\ndriver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3129\")\nusername_input = driver.find_element(By.NAME,\"username\")\nusername_input.send_keys(username)\npassword_input = driver.find_element(By.NAME,\"password\")",
+        "detail": "auto",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 5,
+        "importPath": "auto",
+        "description": "auto",
+        "peekOfCode": "driver = webdriver.Edge()\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3678\")\n# driver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3092\")\ndriver.get(\"https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3129\")\nusername_input = driver.find_element(By.NAME,\"username\")\nusername_input.send_keys(username)\npassword_input = driver.find_element(By.NAME,\"password\")\npassword_input.send_keys(password)\nlogin_button = driver.find_element(By.ID, \"loginbtn\")\nlogin_button.click()",
+        "detail": "auto",
+        "documentation": {}
+    },
+    {
+        "label": "username_input",
+        "kind": 5,
+        "importPath": "auto",
+        "description": "auto",
+        "peekOfCode": "username_input = driver.find_element(By.NAME,\"username\")\nusername_input.send_keys(username)\npassword_input = driver.find_element(By.NAME,\"password\")\npassword_input.send_keys(password)\nlogin_button = driver.find_element(By.ID, \"loginbtn\")\nlogin_button.click()\nbuttons = driver.find_elements(By.CSS_SELECTOR, 'button[id^=\"single_button\"]')\nfor button in buttons:\n    button.click()\nwhile True:",
+        "detail": "auto",
+        "documentation": {}
+    },
+    {
+        "label": "password_input",
+        "kind": 5,
+        "importPath": "auto",
+        "description": "auto",
+        "peekOfCode": "password_input = driver.find_element(By.NAME,\"password\")\npassword_input.send_keys(password)\nlogin_button = driver.find_element(By.ID, \"loginbtn\")\nlogin_button.click()\nbuttons = driver.find_elements(By.CSS_SELECTOR, 'button[id^=\"single_button\"]')\nfor button in buttons:\n    button.click()\nwhile True:\n    try:\n        qtext_element = driver.find_element(By.CLASS_NAME, \"qtext\")",
+        "detail": "auto",
+        "documentation": {}
+    },
+    {
+        "label": "login_button",
+        "kind": 5,
+        "importPath": "auto",
+        "description": "auto",
+        "peekOfCode": "login_button = driver.find_element(By.ID, \"loginbtn\")\nlogin_button.click()\nbuttons = driver.find_elements(By.CSS_SELECTOR, 'button[id^=\"single_button\"]')\nfor button in buttons:\n    button.click()\nwhile True:\n    try:\n        qtext_element = driver.find_element(By.CLASS_NAME, \"qtext\")\n        qtext = qtext_element.text  \n        print(qtext)",
+        "detail": "auto",
+        "documentation": {}
+    },
+    {
+        "label": "buttons",
+        "kind": 5,
+        "importPath": "auto",
+        "description": "auto",
+        "peekOfCode": "buttons = driver.find_elements(By.CSS_SELECTOR, 'button[id^=\"single_button\"]')\nfor button in buttons:\n    button.click()\nwhile True:\n    try:\n        qtext_element = driver.find_element(By.CLASS_NAME, \"qtext\")\n        qtext = qtext_element.text  \n        print(qtext)\n        option = driver.find_element(By.XPATH, f\"//div[contains(text(), '{data[qtext]}')]\")\n        option.click()",
+        "detail": "auto",
+        "documentation": {}
+    },
+    {
+        "label": "question",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "question = {}\nkey, value = [], []\nfile_path = 'Quiz_ kiểm tra kiến thức Chương 9 - Nén ảnh_ Attempt review.html'\nwith open(file_path, 'r', encoding='utf-8') as file:\n    html_content = file.read()\nsoup = BeautifulSoup(html_content, 'html.parser')\nqtext_elements = soup.find_all(class_='qtext')\nfor element in qtext_elements:\n    text = element.get_text()  \n    key.append(text)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "file_path",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "file_path = 'Quiz_ kiểm tra kiến thức Chương 9 - Nén ảnh_ Attempt review.html'\nwith open(file_path, 'r', encoding='utf-8') as file:\n    html_content = file.read()\nsoup = BeautifulSoup(html_content, 'html.parser')\nqtext_elements = soup.find_all(class_='qtext')\nfor element in qtext_elements:\n    text = element.get_text()  \n    key.append(text)\nchecked_inputs = soup.find_all('input', {'checked': 'checked'})\nchecked_texts = []",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "soup",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "soup = BeautifulSoup(html_content, 'html.parser')\nqtext_elements = soup.find_all(class_='qtext')\nfor element in qtext_elements:\n    text = element.get_text()  \n    key.append(text)\nchecked_inputs = soup.find_all('input', {'checked': 'checked'})\nchecked_texts = []\nfor input_tag in checked_inputs:\n    div_next = input_tag.find_next('div', {'class': 'flex-fill ml-1'})\n    if div_next:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "qtext_elements",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "qtext_elements = soup.find_all(class_='qtext')\nfor element in qtext_elements:\n    text = element.get_text()  \n    key.append(text)\nchecked_inputs = soup.find_all('input', {'checked': 'checked'})\nchecked_texts = []\nfor input_tag in checked_inputs:\n    div_next = input_tag.find_next('div', {'class': 'flex-fill ml-1'})\n    if div_next:\n        text = div_next.get_text(strip=True)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "checked_inputs",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "checked_inputs = soup.find_all('input', {'checked': 'checked'})\nchecked_texts = []\nfor input_tag in checked_inputs:\n    div_next = input_tag.find_next('div', {'class': 'flex-fill ml-1'})\n    if div_next:\n        text = div_next.get_text(strip=True)\n        checked_texts.append(text)\nfor text in checked_texts:\n    value.append(text)\nfor i in range(len(key)):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "checked_texts",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "checked_texts = []\nfor input_tag in checked_inputs:\n    div_next = input_tag.find_next('div', {'class': 'flex-fill ml-1'})\n    if div_next:\n        text = div_next.get_text(strip=True)\n        checked_texts.append(text)\nfor text in checked_texts:\n    value.append(text)\nfor i in range(len(key)):\n    question[key[i]] = value[i]",
+        "detail": "main",
+        "documentation": {}
+    }
+]

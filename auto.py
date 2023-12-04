@@ -7,16 +7,18 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import re
 
-username = ""
-password = "@"
+username = "B20DCCN325XLAN4FA23"
+password = "Aa167218@"
 
-with open('chuong_8.json', 'r') as file:
+with open('chuong_9.json', 'r') as file:
     data = json.load(file)
 
 
 driver = webdriver.Edge()
 # driver.get("https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3678")
-driver.get("https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3092")
+# driver.get("https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3092")
+driver.get("https://drnguyentt.com/moodle30/mod/quiz/view.php?id=3129")
+
 
 
 username_input = driver.find_element(By.NAME,"username")
